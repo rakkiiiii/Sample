@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $('.js-menu__item__link').each(function() {
+        $(this).on('click', function() {
+          $(this).toggleClass('on');
+          $("+.submenu", this).slideToggle()
+          return false;
+        });
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+
+  <main>
+    <ul class="menu" style="overflow: scroll; float: right;">
+      <li class="menu__item">
+        <a class="menu__item__link js-menu__item__link" style="border-bottom: solid 2px orange;
+">メニュー1（クリックで開く）</a>
+        <ul class="submenu">
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー1</a>
+          </div>
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー2</a>
+          </div>
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー3</a>
+          </div>
+          <div class="submenu__item" style="border-bottom: solid 2px orange;">
+            <a style="border-bottom: solid 2px red;">サブメニュー4</a>
+          </div>
+        </ul>
+      </li>
+      <li class="menu__item">
+        <a class="menu__item__link js-menu__item__link">メニュー2（クリックで開く）</a>
+        <ul class="submenu">
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー1</a>
+          </div>
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー2</a>
+          </div>
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー3</a>
+          </div>
+          <div class="submenu__item" style="border-bottom: solid 2px orange;">
+            <a style="border-bottom: solid 2px red;">サブメニュー4</a>
+          </div>
+        </ul>
+      </li>
+      <li class="menu__item">
+        <a class="menu__item__link js-menu__item__link">メニュー3（クリックで開く）</a>
+        <ul class="submenu">
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー1</a>
+          </div>
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー2</a>
+          </div>
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー3</a>
+          </div>
+          <div class="submenu__item" style="border-bottom: solid 2px orange;">
+            <a style="border-bottom: solid 2px red;">サブメニュー4</a>
+          </div>
+        </ul>
+      </li>
+      <li class="menu__item">
+        <a class="menu__item__link js-menu__item__link">メニュー4（クリックで開く）</a>
+        <ul class="submenu">
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー1</a>
+          </div>
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー2</a>
+          </div>
+          <div class="submenu__item" style="height: 100px;">
+            <a>サブメニュー3</a>
+          </div>
+          <div class="submenu__item" style="border-bottom: solid 2px orange;">
+            <a style="border-bottom: solid 2px red;">サブメニュー4</a>
+          </div>
+        </ul>
+      </li>
+    </ul>
+  </main>
+</body>
+
+</html>
